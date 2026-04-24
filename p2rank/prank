@@ -22,6 +22,8 @@ fi
 THIS_SCRIPT_DIR_REL_PATH=`dirname "${BASH_SOURCE[0]}"`
 export INSTALL_DIR="$THIS_SCRIPT_DIR_REL_PATH"
 
+JAVA_HOME="$INSTALL_DIR/../java"
+
 CLASSPATH="${INSTALL_DIR}/bin/p2rank.jar${PATH_SEPARATOR}${INSTALL_DIR}/bin/lib/*"
 
 # Determine the Java command to use to start the JVM.
